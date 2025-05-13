@@ -1,5 +1,11 @@
 \documentclass[german,noglossaries]{hbrs-thesis}
 
+\usepackage{pgfgantt}
+
+\let\oldsection\section
+\renewcommand{\section}{\clearpage\oldsection}
+
+
 \begin{document}
 \makecentertitle % title page
 
@@ -7,6 +13,14 @@
 \clearpage{} % New page after table of contents
 
 % inlude sections
-\input{chapter/Example.tex}
+\input{chapter/Problemstellung.tex}
+\input{chapter/Ziele.tex}
+\input{chapter/Stand_der_Forschung.tex}
+\input{chapter/Vorgehen.tex}
+\input{chapter/Evaluierung.tex}
+\input{chapter/Gliederungsentwurf.tex}
+\input{chapter/Zeitplan.tex}
+
+\printbibliography
 
 \end{document}

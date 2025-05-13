@@ -206,6 +206,7 @@
 			"env": {}
 		}
 	],
+	"ltex.language": "de-DE",
 	"ltex.additionalRules.enablePickyRules": true,
 	"ltex.latex.commands": {
 		"\\tolerance": "ignore",

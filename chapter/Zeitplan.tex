@@ -1,0 +1,25 @@
+\section{Zeitplan}
+
+\begin{ganttchart}[
+	y unit chart=.75cm,
+	canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+	hgrid style/.style={draw=black!5, line width=.75pt},
+	vgrid={*1{draw=black!5, line width=.75pt}},
+	title/.style={draw=none, fill=none},
+	title label font=\bfseries\footnotesize,
+	title label node/.append style={below=7pt},
+	include title in canvas=false,
+	bar label font=\mdseries\small\color{black!70},
+	bar label node/.append style={left=2cm},
+	bar/.append style={draw=none, fill=plot1},
+]{1}{12}
+	\gantttitle[
+		title label node/.append style={below left=7pt and -7pt},
+	]{Woche\quad1}{1}
+	\gantttitlelist{2,...,12}{1}
+	\\
+	\ganttbar[]{Anforderungen}{1}{2}\\
+	\ganttbar[]{Evaluierung}{9}{10}\\
+	\ganttbar[]{Schreiben}{1}{10}\\
+	\ganttbar[]{Puffer}{11}{12}
+\end{ganttchart}
